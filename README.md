@@ -48,29 +48,23 @@ Open your browser and visit http://127.0.0.1:5000/
 ## Database
 The application uses SQLite as the database. The Cafes table has the following schema:
 
-Column	        Type	    Description 
+## Database
 
-id	            Integer	  Primary Key
+The application uses **SQLite** as the database. The `Cafes` table has the following schema:
 
-name	          String	  Name of the cafe (unique)
-
-map_url	        String	  Google Maps URL of the cafe
-
-img_url	        String	  Image URL of the cafe
-
-location	      String	  General location or area
-
-has_sockets	    Integer	  1 if sockets available, else 0
-
-has_toilet	    Integer	  1 if toilet available, else 0
-
-has_wifi	      Integer	  1 if WiFi available, else 0
-
-can_take_calls	String	  Yes/No
-
-seats	          String	  Number of seats or description
-
-coffee_price	  String	  Average coffee price
+| Column          | Type    | Description                                  |
+|-----------------|--------|----------------------------------------------|
+| id              | Integer | Primary key, unique identifier for each cafe |
+| name            | String  | Name of the cafe (must be unique)           |
+| map_url         | String  | Google Maps URL of the cafe                 |
+| img_url         | String  | Image URL representing the cafe             |
+| location        | String  | General location or area of the cafe        |
+| has_sockets     | Integer | `1` if the cafe has sockets, `0` otherwise |
+| has_toilet      | Integer | `1` if the cafe has a toilet, `0` otherwise|
+| has_wifi        | Integer | `1` if the cafe has WiFi, `0` otherwise    |
+| can_take_calls  | String  | "Yes" if calls can be taken, "No" otherwise|
+| seats           | String  | Number of seats or seating description      |
+| coffee_price    | String  | Average price of coffee                     |
 
 # Project Structure
 cafe-wifi-finder/
